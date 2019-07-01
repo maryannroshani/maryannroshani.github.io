@@ -2,9 +2,6 @@
 
 Here is a code snippet/sample of a project that I was Involved.
 
-Project Overview
-Project Mars is a cloud-based social-media platform that allows users to trade skills with each other. I contributed as a Test Analyst in both Manual and Automation Testing. 
-
 Technologies Used and Learning outcomes: 
 
 ○ .NET core in Visual Studio 2019 along with Selenium Webdriver
