@@ -31,7 +31,7 @@ I was able to improve the existing project framework.
 
 ⦿ I also managed to extract the Test Context for failed test cases in the HTML reporting, so it is more transparent and displays exact context.  Here is an example of the HTML Extent reporting on the project I worked for. 
 
- [Click here for the sample report](https://maryannroshani.github.io/TestReports/MarsReports.html)
+ [[https://maryannroshani.github.io/TestReports/MarsReports.html]]
   
 ⦿ In the existing framework, Test Data reads in  the Page Object Classes, I believe Test Data should be in the Test Class. Pages only knows how to set and retrieve data from the web page and also verify certain things, But has no clue what data it needs to enter to the page. Test class knows what data and when it needs to send to the page in order to test something. 
 
