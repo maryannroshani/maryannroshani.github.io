@@ -1,35 +1,35 @@
 # SampleProject
 
-Technologies Used and Learning outcomes: 
+Technologies Used : 
 
-○ .NET core in Visual Studio 2019 along with Selenium Webdriver
+○ .NET core, Visual Studio 2019, Selenium Webdriver
 
-○ Page Object Model (POM) to reduce duplicate test code, reuse of code and Improves readability for better Test Scripts.
+○ Page Object Model (POM) 
 
-○ Nunit Framework as Test runner and provide immediate test reuslts for each test case in the Test controller. 
+○ Nunit Framework 
 
-○ Extent Reporting is a Customized HTML reports provides a Graphical UI of the test results such as pie chart representation, test stepwise report generation, adding screenshots etc. 
+○ HTML Extent Reporting 
 
-○ Excel Data Reader support to run a test case multiple times with different input and validation values.
+○ Excel Data Reader 
 
-○ AutoIT for window control manipulation to automate a task which is not possible by selenium webdriver. Example: Upload/Download files.
+○ AutoIT 
 
-○ Docker: Run Project Mars Image in the Test Environment, using Docker Compose Tool. Docker is made to run the application solution locally and independantly. 
+○ Docker 
 
-Acheivement:
+Improvements:
 
-I was able to improve the existing project framework. 
+I was able to improve the existing project Test Framework. 
 
 ⦿ I included the HTML Extent Reporting "test log" code in the Tear Down Scenario, where it logs reporting automatically for each test cases, so that you have to focus only on creating your tests as you normally do. This way it improves the code reuseability and a good practise of programming. 
 	
 ⦿ I prefer to capture screenshot only if a test step fails as the images will consume more memory if captured on every test step. If an assert causes a failure, it will be caught, capture screenshot and reported to Extent Reporting. 
 
-⦿ I also managed to extract the Test Context for failed test cases in the HTML reporting, so it is more transparent and displays exact context the cause for failure.  Here is an example of the HTML Extent reporting on the project I worked for. 
+⦿ By utilising Assertions and using NUnit, I managed to extract the Test Context for failed test cases in the HTML reporting, so will have better information to investigate test failures.   
 [Click here for Sample Extent Report]({% link TestReports/MarsReports.html %})
   
 ⦿ I believe Test Data should be in the Test Class. Pages only knows how to set and retrieve data from the web page and also verify certain things, But has no clue what data it needs to enter to the page. Test class knows what data and when it needs to send to the page in order to test something. 
 
-⦿ Also, in the Existing Framework, for all the test cases in Page object had one test runner, if a test case fails the whole Test suite fails. In the new Framework, the test cases are independent, if one test case fails it doesn’t stop running the rest of the test cases, it will continue until all the test cases are executed.  
+⦿ By moving test logic to test controller and handling each test case using a single test method, tests will be run independent of each other. That will eliminate the risk of failing all the test cases instead of having multiple test cases inside a single method of the page object.   
 
 ⦿ Refactoring Methods: 
 "SelectElement" class in Selenium provides a convenience method for manipulating selections of options in an HTML select element. I have used this method in DropDown selections and was able to reduce the no of code. 
